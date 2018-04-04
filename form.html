@@ -51,7 +51,7 @@
 
 <!-- ======================================================= -->
 	<div class="container2">
-		<form name="form1" method="post">
+		<form action="/json.jsp" name="form1" method="post">
 		    <div>
 		        <h2 class="title">행사 정보 등록</h2>
 		        <table class="user-table">
@@ -64,7 +64,7 @@
 		                    <label class="asterisk" >행사명</label>
 		                </td>
 		                <td>
-		                    <input type="text" maxlength="50" size="50" id="input" name="userid" autofocus>
+		                    <input name="name" type="text" maxlength="50" size="50" id="input"  autofocus>
 		                </td>
 		            </tr>
 		            <tr>
@@ -72,7 +72,7 @@
 		                    <label class="asterisk" >주최자</label>
 		                </td>
 		                <td>
-		                    <input type="text" maxlength="50" size="50" id="input" name="userid" autofocus>
+		                    <input name="sponsor" type="text" maxlength="50" size="50" id="input" >
 		                </td>
 		            </tr>
                 <tr>
@@ -80,7 +80,7 @@
 		                    <label class="asterisk">행사 시작 날짜</label>
 		                </td>
 		                <td>
-                      <input type="date" id="input" >
+                      <input name="start_date" type="date" id="input" >
 		                </td>
 		            </tr>
                 <tr>
@@ -88,7 +88,7 @@
                         <label class="asterisk">행사 종료 날짜</label>
                     </td>
                     <td>
-                      <input type="date" id="input" >
+                      <input name="end_date" type="date" id="input" >
 
                     </td>
                 </tr>
@@ -97,7 +97,7 @@
 		                    <label class="asterisk">행사 시간</label>
 		                </td>
 		                <td>
-		                    <input type="text" maxlength="50" size="50" id="input" placeholder="예) 09 : 00 - 18 : 00" name="userid" autofocus>
+		                    <input name="time" type="text" maxlength="50" size="50" id="input" placeholder="예) 09 : 00 - 18 : 00">
 		                </td>
 		            </tr>
 		            <tr>
@@ -105,7 +105,7 @@
 		                    <label class="asterisk" >장소</label>
 		                </td>
 		                <td>
-		                    <input type="text" maxlength="50" size="50" id="input" name="userid" autofocus>
+		                    <input name="addr" type="text" maxlength="50" size="50" id="input">
 		                </td>
 		            </tr>
 
@@ -114,7 +114,7 @@
 		                   <label class="asterisk">설명</label>
 		                </td>
 		                <td>
-		                    <textarea id="input" cols="60" rows="25" placeholder="설명을 기입해주세요." wrap="hard" ></textarea>
+		                    <textarea name="intro" id="input" cols="60" rows="25" placeholder="설명을 기입해주세요." wrap="hard" ></textarea>
 		                </td>
 		            </tr>
 		        </table>
@@ -130,7 +130,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
    <script src="./js/bootstrap.min.js"></script>
-   <script src=-"./js/carousel.js"></script>
    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
    <script src="./asset/js/vendor/holder.js"></script>
    <script src="form.html"></script>
