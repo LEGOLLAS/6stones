@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+    <title>행사 추가하기</title>
+    <!-- Bootstrap core CSS -->
+      <link href="./css/bootstrap.min.css" rel="stylesheet">
+      <link href="./css/normalize.css" rel="stylesheet">
+      <link href="./css/style.css" rel="stylesheet">
+      <link href="./css/carousel.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <link href="css/form.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR ================================================== -->
+  <div class="container-fluid">
+      <div class="container">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-scroll">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">6stones</a>
+            </div>
+
+            <div id="navbar" class="collaspse navbar-collapse nevbar-right nevbar-1-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Mypage</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+<!-- ======================================================= -->
+	<div class="container2">
+		<form action="/json.jsp" name="form1" method="post">
+		    <div>
+		        <h2 class="title">행사 정보 등록</h2>
+		        <table class="user-table">
+		        	<colgroup>
+		        		<col style="width:30%;">
+		        		<col style="width:70%;">
+		        	</colgroup>
+		            <tr>
+		                <td>
+		                    <label class="asterisk" >행사명</label>
+		                </td>
+		                <td>
+		                    <input name="name" type="text" maxlength="50" size="50" id="input"  autofocus>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>
+		                    <label class="asterisk" >주최자</label>
+		                </td>
+		                <td>
+		                    <input name="sponsor" type="text" maxlength="50" size="50" id="input" >
+		                </td>
+		            </tr>
+                <tr>
+		                <td>
+		                    <label class="asterisk">행사 시작 날짜</label>
+		                </td>
+		                <td>
+                      <input name="start_date" type="date" id="input" >
+		                </td>
+		            </tr>
+                <tr>
+                    <td>
+                        <label class="asterisk">행사 종료 날짜</label>
+                    </td>
+                    <td>
+                      <input name="end_date" type="date" id="input" >
+
+                    </td>
+                </tr>
+                <tr>
+		                <td>
+		                    <label class="asterisk">행사 시간</label>
+		                </td>
+		                <td>
+		                    <input name="time" type="text" maxlength="50" size="50" id="input" placeholder="예) 09 : 00 - 18 : 00">
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>
+		                    <label class="asterisk" >장소</label>
+		                </td>
+		                <td>
+		                    <input name="addr" type="text" maxlength="50" size="50" id="input">
+		                </td>
+		            </tr>
+
+		            <tr>
+		                <td>
+		                   <label class="asterisk">설명</label>
+		                </td>
+		                <td>
+		                    <textarea name="intro" id="input" cols="60" rows="25" placeholder="설명을 기입해주세요." wrap="hard" ></textarea>
+		                </td>
+		            </tr>
+		        </table>
+		    </div>
+
+		</form>
+		<div class="btn-area">
+	    	<button class="btn-danger" id="btn_save">등 록</button>
+	    	<button class="btn-default" id="btn_cancel">취 소</button>
+	    </div>
+	</div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+   <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+   <script src="./asset/js/vendor/holder.js"></script>
+   <script src="form.html"></script>
+  </body>
+</html>
